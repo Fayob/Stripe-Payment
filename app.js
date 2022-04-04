@@ -4,6 +4,8 @@ require("express-async-errors");
 const express = require("express");
 const app = express();
 
+// NOTE: This should be connected to database because the prices will be checked from database first before making payment
+
 // Controller
 
 // error Handler
