@@ -25,7 +25,7 @@ fetch("/stripe", {
   })
   .then(function (data) {
     var elements = stripe.elements();
-
+ 
     var style = {
       base: {
         color: "#32325d",
