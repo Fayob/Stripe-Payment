@@ -1,7 +1,7 @@
 const stripe = require("stripe")(process.env.STRIPE_API_SECRET);
 
 const stripeController = async (req, res) => {
-  const { purchase, total_amount, shipping_fee } = req.body;
+  const { purchas, total_amount, shipping_fee } = req.body;
 
   const calculateOrderAmount = () => {
     return total_amount + shipping_fee;
